@@ -45,6 +45,7 @@ It supports early screening for:
                          +--------v--------+
                          |   Streamlit UI   |
                          +------------------+
+---
 ##Components:
 
 📄 PDF ingestion (WHO Guidelines)
@@ -56,7 +57,7 @@ It supports early screening for:
 🧠 Risk categorization logic (rule-based + GPT)
 
 🌐 Streamlit Cloud frontend
-
+---
 ##💬 Example Queries & Outputs
 ✅ Query 1:
 "I'm feeling severe headache, blurred vision, and swelling in hands and feet."
@@ -75,7 +76,8 @@ Output:
 🟡 Risk Category: Moderate Risk (Monitor Closely)
 📚 Supporting Info: WHO suggests back pain and spotting may be normal, but persistent symptoms require evaluation.
 ✅ Suggested Action: Monitor symptoms. If spotting continues or intensifies, consult your doctor.
-🚀 Deployment Steps (Streamlit Cloud)
+---
+##🚀 Deployment Steps (Streamlit Cloud)
 1. 🔧 Clone the Repository
 
 git clone https://github.com/YOUR_USERNAME/pregnancy-risk-assessment.git
@@ -108,8 +110,8 @@ Connect your GitHub repo
 Set app.py as the main file
 
 Hit Deploy
-
-📁 Project Structure
+---
+##📁 Project Structure
 Copy
 Edit
 pregnancy-risk-assessment/
@@ -120,8 +122,9 @@ pregnancy-risk-assessment/
 ├── documents/
 │   └── WHO_guidelines.pdf
 └── README.md
-🤝 Contributing
+---
+##🤝 Contributing
 Pull requests and issues are welcome! Please ensure you're citing medical sources responsibly.
-
-⚠️ Disclaimer
+---
+##⚠️ Disclaimer
 This chatbot is for informational purposes only and not a replacement for professional medical advice. Always consult your healthcare provider.
