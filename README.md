@@ -23,7 +23,7 @@ It supports early screening for:
 ---
 
 ## 🧠 System Architecture
-<pre> ```mermaid 
+```mermaid 
 flowchart TD
     A[WHO Guidelines / RAG Knowledge Base]
     A --> B[LlamaIndex]
@@ -35,7 +35,7 @@ flowchart TD
     style A fill:#f9f,stroke:#333,stroke-width:2px
     style F fill:#bbf,stroke:#333,stroke-width:2px
     style D fill:#cfc,stroke:#333,stroke-width:2px
- ``` </pre>
+ ``` 
 ---
 ## Components:
 
