@@ -91,8 +91,5 @@ if submitted:
             result = query_engine.query(prompt)
         st.markdown(f"** Q{i}: {question}**")
         st.markdown(f" *{answer}*")
-        st.markdown(f" **Assessment**:")
-```
-{str(result)}
-```")
+        st.markdown(f" **Assessment**:```{str(result)}```")
         st.markdown("---")
