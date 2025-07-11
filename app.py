@@ -10,7 +10,8 @@ st.markdown("Answer the following questions to assess symptom risk using WHO-bas
 
 @st.cache_resource
 def initialize_engine():
-    os.environ["AIzaSyA7cksPwuOo56k8zLTF3es20F7v66NMccg"] = st.secrets["AIzaSyA7cksPwuOo56k8zLTF3es20F7v66NMccg"]
+    GOOGLE_API_KEY = AIzaSyA7cksPwuOo56k8zLTF3es20F7v66NMccg
+    os.environ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
     llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0.3)
     Settings.llm = llm
     Settings.embed_model = HuggingFaceEmbedding("sentence-transformers/all-MiniLM-L6-v2")
