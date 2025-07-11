@@ -28,7 +28,7 @@ flowchart TD;
     A[WHO Guidelines / RAG Knowledge Base];
     A-->B[LlamaIndex];
     B-->C[Vector Index + RAG];
-    C-->D[Query Engine(Gemini / OpenAI LLM)];
+    C-->D[Query Engine - Gemini / OpenAI LLM];
     D-->E[Risk Categorization Logic];
     E-->F[Streamlit UI];
 ``` 
