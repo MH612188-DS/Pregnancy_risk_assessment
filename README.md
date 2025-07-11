@@ -24,7 +24,7 @@ It supports early screening for:
 
 ## 🧠 System Architecture
 ```mermaid
-flowchart TD
+flowchart TD;
     A[WHO Guidelines / RAG Knowledge Base];
     A --> B[LlamaIndex];
     B --> C[Vector Index + RAG];
