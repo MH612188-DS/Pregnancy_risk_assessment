@@ -1,0 +1,7 @@
+streamlit
+llama-index
+langchain
+langchain-google-genai
+sentence-transformers
+llama-index-llms-langchain
+llama-index-embeddings-huggingface
