@@ -9,7 +9,7 @@ This project is an LLM-powered chatbot that assesses pregnancy-related risks usi
 Pregnant individuals often face challenges understanding whether their symptoms indicate a medical emergency or a manageable condition. This chatbot aims to:
 
 - Allow users to enter **free-text symptom queries**
-- Retrieve **trusted medical information** from WHO/local documents
+- Retrieve **trusted medical information** from WHO/local documents and given RAG knowledge base
 - Analyze symptoms with **advanced rule-based + LLM logic**
 - Provide **risk labels** (e.g., Low, Moderate, High Risk) and **suggest next steps**
 
