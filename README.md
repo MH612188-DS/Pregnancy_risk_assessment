@@ -58,6 +58,7 @@ It supports early screening for:
 🧠 Risk categorization logic (rule-based + GPT)
 
 🌐 Streamlit Cloud frontend
+
 ---
 ## 💬 Example Queries & Outputs
 ✅ Query 1:
