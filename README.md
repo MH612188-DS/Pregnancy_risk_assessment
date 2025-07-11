@@ -23,37 +23,19 @@ It supports early screening for:
 ---
 
 ## 🧠 System Architecture
-```mermaid
-flowchart TD;
-    A[WHO Guidelines / RAG Knowledge Base];
-    A --> B[LlamaIndex];
-    B --> C[Vector Index + RAG];
-    C --> D[Query Engine<br>(Gemini / OpenAI LLM)];
-    D --> E[Risk Categorization Logic];
-    E --> F[Streamlit UI];
-```
-```plaintext
-             +-----------------------------------------+
-             |    WHO Guidelines/RAG Knowledge Base    |
-             +--------------------+--------------------+
-                                  |
-                             [LlamaIndex]
-                                  |
-           +----------------------v--------------------+
-           |             Vector Index + RAG            |
-           +----------------------+--------------------+
-                                  |
-                     +------------v-------------+
-                     |       Query Engine       |
-                     | (using Gemini/OpenAI LLM)|
-                     +------------+-------------+
-                                  |
-                         [Risk Categorization]
-                                  |
-                         +--------v--------+
-                         |   Streamlit UI   |
-                         +------------------+
-```
+<pre> ```mermaid 
+flowchart TD
+    A[WHO Guidelines / RAG Knowledge Base]
+    A --> B[LlamaIndex]
+    B --> C[Vector Index + RAG]
+    C --> D[Query Engine\n(Gemini / OpenAI LLM)]
+    D --> E[Risk Categorization Logic]
+    E --> F[Streamlit UI]
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style F fill:#bbf,stroke:#333,stroke-width:2px
+    style D fill:#cfc,stroke:#333,stroke-width:2px
+ ``` </pre>
 ---
 ## Components:
 
