@@ -82,16 +82,16 @@ with st.form("symptom_form"):
 
 if submitted:
     st.markdown("---")
-    st.subheader("🤖 Risk Analysis Summary")
+    st.subheader(" Risk Analysis Summary")
     for i, (question, answer) in enumerate(responses, 1):
         if not answer.strip():
             continue
         with st.spinner(f"Analyzing Q{i}..."):
             prompt = generate_prompt(question, answer)
             result = query_engine.query(prompt)
-        st.markdown(f""**🩺 Q{i}: {question}**")
-        st.markdown(f"👤 *{answer}*")
-        st.markdown(f"🤖 **Assessment**:")
+        st.markdown(f""** Q{i}: {question}**")
+        st.markdown(f" *{answer}*")
+        st.markdown(f" **Assessment**:")
 ```
 {str(result)}
 ```")
