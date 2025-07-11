@@ -89,7 +89,7 @@ if submitted:
         with st.spinner(f"Analyzing Q{i}..."):
             prompt = generate_prompt(question, answer)
             result = query_engine.query(prompt)
-        st.markdown(f""** Q{i}: {question}**")
+        st.markdown(f"** Q{i}: {question}**")
         st.markdown(f" *{answer}*")
         st.markdown(f" **Assessment**:")
 ```
