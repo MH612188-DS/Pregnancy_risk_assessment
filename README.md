@@ -61,45 +61,54 @@ It supports early screening for:
 ---
 ## 💬 Example Queries & Outputs
 ✅ Query 1:
-"I'm feeling severe headache, blurred vision, and swelling in hands and feet."
+``` "I'm feeling severe headache, blurred vision, and swelling in hands and feet." ```
 
 Output:
-
+```
 🤖 Assessment:
 🟠 Risk Category: High Risk (Possible Preeclampsia)
 📚 Supporting Info: Retrieved from WHO Maternal Health Guidelines
 ✅ Suggested Action: Seek immediate medical attention. Contact your healthcare provider or visit the nearest emergency unit.
 ✅ Query 2:
 "I have mild back pain and occasional spotting at 10 weeks."
+```
 
+```
 Output:
 🤖 Assessment:
 🟡 Risk Category: Moderate Risk (Monitor Closely)
 📚 Supporting Info: WHO suggests back pain and spotting may be normal, but persistent symptoms require evaluation.
 ✅ Suggested Action: Monitor symptoms. If spotting continues or intensifies, consult your doctor.
+```
+
+
 ---
 ## 🚀 Deployment Steps (Streamlit Cloud)
 1. 🔧 Clone the Repository
 
+```
 git clone https://github.com/YOUR_USERNAME/pregnancy-risk-assessment.git
 cd pregnancy-risk-assessment
+```
+
 2. 📄 Add Secrets
 Create a file .streamlit/secrets.toml and insert your API key:
 
-GOOGLE_API_KEY = "your_google_gemini_api_key_here"
+``` GOOGLE_API_KEY = "your_google_gemini_api_key_here" ```
 Use OpenAI API if needed, e.g., OPENAI_API_KEY = "your-key"
 
 3. 📦 Add requirements.txt
 Ensure this file contains all required packages:
-
+```
 streamlit
 openai
 llama-index
 langchain
 langchain-community
 sentence-transformers
+```
 
-4. 🌍 Deploy to Streamlit Cloud
+5. 🌍 Deploy to Streamlit Cloud
 Push to GitHub
 
 Go to Streamlit Cloud
@@ -111,10 +120,12 @@ Connect your GitHub repo
 Set app.py as the main file
 
 Hit Deploy
+
 ---
+
 ## 📁 Project Structure
-Copy
-Edit
+
+```
 pregnancy-risk-assessment/
 ├── app.py
 ├── requirements.txt
@@ -123,9 +134,12 @@ pregnancy-risk-assessment/
 ├── documents/
 │   └── WHO_guidelines.pdf
 └── README.md
+```
+
 ---
 ## 🤝 Contributing
 Pull requests and issues are welcome! Please ensure you're citing medical sources responsibly.
+
 ---
 ## ⚠️ Disclaimer
 This chatbot is for informational purposes only and not a replacement for professional medical advice. Always consult your healthcare provider.
