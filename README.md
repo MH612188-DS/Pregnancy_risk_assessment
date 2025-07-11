@@ -45,7 +45,7 @@ It supports early screening for:
                          +--------v--------+
                          |   Streamlit UI   |
                          +------------------+
-Components:
+##Components:
 
 📄 PDF ingestion (WHO Guidelines)
 
@@ -57,15 +57,12 @@ Components:
 
 🌐 Streamlit Cloud frontend
 
-💬 Example Queries & Outputs
+##💬 Example Queries & Outputs
 ✅ Query 1:
 "I'm feeling severe headache, blurred vision, and swelling in hands and feet."
 
 Output:
 
-yaml
-Copy
-Edit
 🤖 Assessment:
 🟠 Risk Category: High Risk (Possible Preeclampsia)
 📚 Supporting Info: Retrieved from WHO Maternal Health Guidelines
@@ -74,42 +71,31 @@ Edit
 "I have mild back pain and occasional spotting at 10 weeks."
 
 Output:
-
-yaml
-Copy
-Edit
 🤖 Assessment:
 🟡 Risk Category: Moderate Risk (Monitor Closely)
 📚 Supporting Info: WHO suggests back pain and spotting may be normal, but persistent symptoms require evaluation.
 ✅ Suggested Action: Monitor symptoms. If spotting continues or intensifies, consult your doctor.
 🚀 Deployment Steps (Streamlit Cloud)
 1. 🔧 Clone the Repository
-bash
-Copy
-Edit
+
 git clone https://github.com/YOUR_USERNAME/pregnancy-risk-assessment.git
 cd pregnancy-risk-assessment
 2. 📄 Add Secrets
 Create a file .streamlit/secrets.toml and insert your API key:
 
-toml
-Copy
-Edit
 GOOGLE_API_KEY = "your_google_gemini_api_key_here"
 Use OpenAI API if needed, e.g., OPENAI_API_KEY = "your-key"
 
 3. 📦 Add requirements.txt
 Ensure this file contains all required packages:
 
-txt
-Copy
-Edit
 streamlit
 openai
 llama-index
 langchain
 langchain-community
 sentence-transformers
+
 4. 🌍 Deploy to Streamlit Cloud
 Push to GitHub
 
